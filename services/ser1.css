@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:  #c9c6c4;
+    color: #333;
+    padding-top: 80px;   /* Add padding to prevent content from jumping */
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.study {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #2d2e2d;
+}
+
+header {
+    background-color: #2d2e2e;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header h1 {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #bea97c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-left: 5%;
+    height: 7%;
+}
+
+.logo-img {
+
+    height: 70px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 34px
+    
+}
+
+/* Mobile Menu Styles */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #bea97c;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70%;
+        right: -100%;
+        width: 30%;
+        height:70vh ;
+        background-color: #2d2e2e;
+        padding-top: 60px;
+        transition: 0.3s ease;
+        border-radius: 15px;
+        z-index: 1000;
+    }
+
+    .nav-menu.visible {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 16px 0;
+    }
+    .logo-img {
+        height: 50px;
+        align-self: right;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-img {
+        height: 35px;
+    }
+}
+
+.menu-toggle {
+    z-index: 1001;
+}
+
+.hero {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    background-image: url("ser-images/ser.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #e3e4e1;
+    padding: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 80vh;
+        padding: 4rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        height: 110vh;
+    }
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+.ser1-info {
+    padding: 0px 5%;
+    font-size: 1rem;
+}
+
+.ser1-info p {
+    padding: 1rem 0;
+}
+
+.points {
+    font-size: 1rem;
+}
+
+.points ul {
+    margin-left: 20px;
+}
+
+.ser1-info2 {
+    padding: 0px 5%;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .ser1-info,
+    .ser1-info2 {
+        padding: 0px 2%;
+    }
+    
+    .ser1-info p {
+        padding: 0.8rem 0;
+    }
+}
+
+.design {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ser-images/ser2-build.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.design h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (min-width: 768px) {
+    .design {
+        min-height: 70vh;
+    }
+    
+    .design h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .design {
+        min-height: 100vh;
+    }
+    
+    .design h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    footer ul li {
+        margin: 0.5rem;
+        width: 100%;
+    }
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+

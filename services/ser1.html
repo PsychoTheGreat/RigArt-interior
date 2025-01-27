@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interior design services for residential and commercial spaces. Transforming your home and office into beautiful spaces.">
+    <title>RIGART-Services</title>
+    <link rel="stylesheet" href="ser1.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/home page/index.html">
+                    <img src="/images/regartlogo.jpeg" alt="Regart Logo" class="logo-img">
+                </a>
+                <h1>RIG ART</h1>
+            </div>
+            
+            <button class="hamburger" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/home page/index.html">HOME</a></li>
+                    <li><a href="/about/about.html">ABOUT</a></li>
+                    <li><a href="/Reach Us/reach.html">OUR REACH</a></li>
+                    <li><a href="/services/ser1.html">SERVICES</a></li>
+                    <li><a href="/design/design.html">DESIGN</a></li>
+                    <!-- <li><a href="/portfolio/portfolio.html">PORTFOLIO</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        
+        <h1>INTERIOR DESIGN SERVICE</h1>
+        
+    </section>
+
+
+
+
+    <section class="ser1-info">
+        <br>
+        <p>We are an interior design company in Mumbai dedicated to providing full-fledged solutions for residential commercial, hospitality, and retail spaces. Our services are designed specifically for your needs, preferences, and the purpose for which the space is intended. Every person has a different lifestyle, and so should every design. Let us bring your vision to life with designs that seamlessly blend functionality and aesthetics.</p>
+        <p>It is in Rigart where such luxury bespoke interior design services are delivered to a client that has a specific need, taste, and preference. Here, the optimization of space, improvement in well-being, and functionality have been a solid foundation for success in every project that has been delivered.</p>
+        <p>Our approach starts with the careful, systematic creation of unique design concepts based on standards professional team analyzes in detail each client's lifestyle, preferences, and furnishing requirements to translate these into bespoke design concepts. These concepts become exceptional interior spaces that combine thoughtful styling and decoration with a focus on practicality, functionality, and timeless elegance.</p>
+        <p>We focus strictly on safety standards. Maintain quality parameters rigorously and infuse engineered solutions in making it safe, healthy, and inspirational space. Intense focus remains for seasoned professionals when working in such an interior designing or decoration field based on the idea for which space is developed-a reason to seek comfort and expression by man.</p>
+
+    </section> 
+    <section class="ser1-info">
+        <h2>We are here to fulfill all your lifestyle needs and preferences.</h2>
+        <p>Rigart is a comprehensive luxury interior design firm devoted to bringing your vision to life from the ground up. No project is too much for us to take on—we transform your dreams into reality.</p>
+        <div class="points">
+            <p>To achieve this, we begin by:</p>
+        <ul>
+            <li>Understanding your lifestyle requirements.</li>
+            <li>Engaging in discussions to grasp your aesthetic preferences.</li>
+            <li>Finally, our experts evaluate your space’s potential.</li>
+            <li>We optimize your existing space with detailed, industry-standard designs.</li>
+        </ul>
+
+        </div>
+        
+
+    </section>
+
+    <section class="ser1-info">
+        <h2>What are the comprehensive interior design services offered by Rigart?</h2>
+        
+        <div class="points">
+            <p>Once the vision and briefing phase with the project owners is complete, the design process begins as follows:</p>
+        <ul>
+            <li>We assess your lifestyle needs.</li>
+            <li>We engage in discussions to understand your aesthetic preferences.</li>
+            <li>Our experts evaluate your space’s potential based on these insights.</li>
+        </ul>
+
+        </div>
+        
+
+    </section>
+
+    <section class="ser1-info2">
+        
+        <p>Our Interior Architects provide expert guidance to help clients make informed decisions about practical design options.</p>
+        <p>We source high-quality, branded materials tailored to the design, including stone, marble, tiles, fabrics, wallpaper, HVAC systems, switches, paint shades, cladding materials, mirrors, glass, veneers, laminates, metals, and finishes, all selected to meet the specific design requirements.</p>
+        
+        
+
+    </section>
+    <section class="ser1-info2">
+        <h2>How do our designers collaborate with you to craft exceptional designs for your project?</h2>
+        <p>We design spaces that reflect your lifestyle and personal preferences, ensuring they resonate with you. Rigart is equipped to handle projects of any scale. After a thorough discussion with you, we identify your tastes and ideas to create a design that fits your way of living. After all, it’s your space, and it should feel like home. We are here to blend aesthetics with your unique tastes to craft the perfect environment for you.</p>
+        <br>
+        <p>After receiving your feedback and suggestions, our designers create customized designs tailored to your preferences. We work closely with our clients, exploring all possible avenues to deliver the most effective and optimal solutions.</p>
+        <br>
+        <p><b>Our interior designers in Mumbai </b> assist you till you are 100% satisfied.Feel free to contact us to discuss your requirements further.</p>
+
+    </section>
+
+
+    <section class="design">
+        
+        <h1>
+            It would be our pleasure to take you <br>
+            through our Portfolio over a cup of coffee
+        </h1>
+        
+    </section>
+
+
+
+
+
+
+
+    <footer>
+      <div class="container">
+          <p>&copy; 2024 Interior Design Studio. All Rights Reserved.</p>
+          <p>Follow us on social media:</p>
+          <ul>
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://in.pinterest.com/ideas">Pinterest</a></li>
+          </ul>
+      </div>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('visible');
+            // Animate hamburger icon
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                navMenu.classList.remove('visible');
+                menuToggle.classList.remove('active');
+            }
+        });
+    </script>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIGART-About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/home page/index.html">
+                    <img src="/images/regartlogo.jpeg" alt="Regart Logo" class="logo-img">
+                </a>
+                <h1>RIG ART</h1>
+            </div>
+            
+            <button class="hamburger" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/home page/index.html">HOME</a></li>
+                    <li><a href="/about/about.html">ABOUT</a></li>
+                    <li><a href="/Reach Us/reach.html">OUR REACH</a></li>
+                    <li><a href="/services/ser1.html">SERVICES</a></li>
+                    <li><a href="/design/design.html">DESIGN</a></li>
+                    <!-- <li><a href="/portfolio/portfolio.html">PORTFOLIO</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <section class="about-hero">
+            <br>
+            <br>
+            <h1>About Us</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </section>
+
+        <section class="about-content">
+            <img src="about-images/about.webp" alt="Luxury Interior Design" />
+            <div class="about-text">
+                <h2>LUXURY INTERIOR DESIGNERS</h2>
+                <p>Chie Design is based out of Mumbai, India. We are a collective of creative thinkers committed to producing intelligent, high-performance designs that are timeless and enduring. We specialize in residential, commercial, hospitality, and multi-use space designs. Our goal is to exceed the expectations of our customers with innovative and thoughtful designs that create memorable experiences.</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="about-text">
+                <h2>WORLDWIDE REACH AND INTERNATIONAL DESIGN STANDARDS</h2>
+                <p>As an end-to-end design firm, we strive to create a global impact. Our founder has collaborated with some of the biggest names in the industry and served prestigious clients both in India and internationally. Our designs are modern, luxurious, and innovative, tackling each project as a new challenge and integrating contemporary design solutions.</p>
+            </div>
+            <img src="about-images/about.webp" alt="International Design Standards" />
+        </section>
+
+        <section class="about-content">
+            <img src="about-images/about.webp" alt="Trusted Partner in Design" />
+            <div class="about-text">
+                <h2>YOUR TRUSTED PARTNER</h2>
+                <p>With substantial experience in luxury space design and construction, we’ve worked alongside celebrated international designers and project management professionals. We pride ourselves on attention to detail and efficient project management that ensures exceptional results. With us, you have a transparent and dependable partner every step of the way.</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="about-text">
+                <h2>OUR FOUNDER</h2>
+                <p>Our founder brings extensive experience from working with industry leaders and high-net-worth clients. Their vision of creating innovative, luxurious spaces is at the heart of our design philosophy. This experience has positioned us among the best interior design firms in Mumbai today.</p>
+            </div>
+            <img src="about-images/about.webp" alt="Founder of Chie Design" />
+        </section>
+
+        <section class="about-content1">
+            <div class="about-text1">
+                <h2>Our Approach</h2>
+                <p>We have extensive experience in designing and constructing luxury spaces, gained by working with renowned international designers and architects. Our approach involves meticulous attention to detail and seamless project management, ensuring your project is delivered to the highest standard.</p>
+            </div>
+            <div class="about-text1">
+                <h2>OUR EXPERIENCE</h2>
+                <p>As an end-to-end design firm, we are committed to exceeding our clients' expectations. With vast experience in high-end projects, we offer solutions for any design challenge, from concept to completion.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Regart. All Rights Reserved.</p>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://in.pinterest.com/ideas">Pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('visible');
+        // Animate hamburger icon
+        menuToggle.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('visible');
+            menuToggle.classList.remove('active');
+        }
+    });
+</script>

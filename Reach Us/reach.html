@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interior design services for residential and commercial spaces. Transforming your home and office into beautiful spaces.">
+    <title>RIGART-Reach</title>
+    <link rel="stylesheet" href="reach.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/home page/index.html">
+                    <img src="/images/regartlogo.jpeg" alt="Regart Logo" class="logo-img">
+                </a>
+                <h1>RIG ART</h1>
+            </div>
+            
+            <button class="hamburger" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/home page/index.html">HOME</a></li>
+                    <li><a href="/about/about.html">ABOUT</a></li>
+                    <li><a href="/Reach Us/reach.html">OUR REACH</a></li>
+                    <li><a href="/services/ser1.html">SERVICES</a></li>
+                    <li><a href="/design/design.html">DESIGN</a></li>
+                    <!-- <li><a href="/portfolio/portfolio.html">PORTFOLIO</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        
+        <h1>Reach Us</h1>
+        
+    </section>
+
+
+<br>
+<br>
+
+    <section>
+        
+        
+        <div class="box">
+            <img src="reach-images/residential.webp" alt="">
+            <div class="box-content">
+                <h1>Residential</h1>
+                <p>We listen to our clients. By doing that, we create a variety of unique luxury homes. These homes focus on families, comfort, and practicality. Each home shows something special about its owner. So, Residential interior design needs just the right mix of elements. These elements should uplift the senses in a great way. When we design for our clients, we remember that every room must blend functionality & beauty. Whether it’s the living room, dining area, bedroom, kids’ room, kitchen, terrace, or bathroom—every space matters. We pay attention to every detail and ergonomic need while designing. Comfort and durability are always top of mind. Our experts really focus on the technical parts too, which helps create a perfect space for our clients.</p>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box">
+            
+            <div class="box-content">
+                <h1>Hospatility</h1>
+                <p> In Hospitality Interior Design, business is key. We aim to enhance spaces with a certain style & vibe while ensuring they perform financially. At Chie Design, we pay close attention to leave a lasting impression through our custom-made designs that reflect business goals. It’s all about striking a balance between elegance, luxury, and grandeur—this creates an inviting experience when customers arrive. Our design styles for places like lobbies, restaurants, guest rooms, and suites impress visitors. They always remember these spots and look forward to coming back again! Our team consists of some of the best interior designers in India. Together, we work hard to achieve our goal: ‘Excellence delivered.’</p>
+            </div>
+            <img src="reach-images/hospitality.jpg" alt="">
+        </div>
+    </section>
+    
+    <section>
+        <div class="box">            <img src="reach-images/commerical.jpg" alt="">
+            <div class="box-content">
+                <h1>Commercial</h1>
+                <p>We are quick to respond to the changes in the world of commercial interiors. When we design these spaces, we aim to boost productivity, cut down on turnaround times, & stick to budgets. We believe that the key to great Commercial Interior Design is working closely with our clients. This helps us create quality work that fits their vision. At Chie Design, every part of a project is important to us. This includes listening to clients, understanding their hopes, meeting financial goals, delivering on time, making spaces comfortable, & being mindful of sustainability. We’ve tackled it all—from traditional styles to modern designs, from simple looks to more ornate styles. This variety has given us great experience and helped us build a solid base of design knowledge.</p>
+            </div>        
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            
+            <div class="box-content">
+                <h1>MULTIDISCIPLINARY</h1>
+                <p>Designing for different kinds of projects can be one of the most exciting parts of our interior design services! Our interior designers in Mumbai invest significant time and effort into thoughtful research to bring our clients' visions to life. Each project is different and requires a flexible approach. We’ve worked on many types like Convocation Halls, Hostels, Clinics, Auditoriums, Clubhouses, & Experience Centers. Through these experiences, we have gathered top-notch design insights. Our designers understand the ever-changing needs of clients and are ready for any challenge that comes their way. Based on what we've learned, we aim to be among the best professional interior designers in India.</p>
+            </div>       
+            <img src="reach-images/multidesciplinary.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section class="info">
+        <p>It would be our pleasure to take <br>
+            through our Portfolio over a cup of coffee</p>
+    </section>
+
+
+
+
+
+    <footer>
+      <div class="container">
+          <p>&copy; 2024 Interior Design Studio. All Rights Reserved.</p>
+          <p>Follow us on social media:</p>
+          <ul>
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://in.pinterest.com/ideas">Pinterest</a></li>
+          </ul>
+      </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('visible');
+            // Animate hamburger icon
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                navMenu.classList.remove('visible');
+                menuToggle.classList.remove('active');
+            }
+        });
+    </script>

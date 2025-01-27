@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:  #c9c6c4;
+    color: #333;
+    padding-top: 80px;   /* Add padding to prevent content from jumping */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.study {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #2d2e2d;
+}
+
+header {
+    background-color: #2d2e2e;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header h1 {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #bea97c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-left: 5%;
+    height: 7%;
+}
+
+.logo-img {
+
+    height: 70px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 34px
+    
+}
+
+/* Mobile Menu Styles */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #bea97c;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70%;
+        right: -100%;
+        width: 30%;
+        height:70vh ;
+        background-color: #2d2e2e;
+        padding-top: 60px;
+        transition: 0.3s ease;
+        border-radius: 15px;
+        z-index: 1000;
+    }
+
+    .nav-menu.visible {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 16px 0;
+    }
+    .logo-img {
+        height: 50px;
+        align-self: right;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-img {
+        height: 35px;
+    }
+}
+
+.menu-toggle {
+    z-index: 1001;
+}
+
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+    background: url("reach-images/multidesciplinary.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: -40px; /* Compensate for header height */
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+@media screen and (max-width: 768px) {
+    .hero{
+        width: 100%;
+        padding: 2rem auto;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .hero{
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 120px;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.box img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.box-content {
+    width: 55%;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+/* Laptop/Desktop View */
+@media screen and (min-width: 1024px) {
+    .box {
+        padding: 40px 120px;
+    }
+    
+    .box img {
+        width: 45%;
+        max-width: 500px;
+    }
+    
+    .box-content {
+        width: 55%;
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+    .box {
+        padding: 30px 60px;
+        gap: 30px;
+    }
+    
+    .box img {
+        width: 40%;
+    }
+    
+    .box-content {
+        width: 60%;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .box img,
+    .box-content {
+        width: 100%;
+    }
+    
+    .box img {
+        height: 300px;
+    }
+}
+
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
+    .box {
+        padding: 15px;
+    }
+    
+    .box img {
+        height: 250px;
+    }
+    
+    .box-content {
+        font-size: 0.9rem;
+    }
+}
+        
+
+
+.info{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+    background: url("reach-images/com2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.info p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(1, 7, 14);
+    padding: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.info p:hover {
+    color: rgb(32, 30, 30);
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+    .info p {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .info p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
+    .info p {
+        font-size: 1.2rem;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}

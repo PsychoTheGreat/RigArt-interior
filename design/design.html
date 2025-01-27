@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIGART-Design</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/home page/index.html">
+                    <img src="/images/regartlogo.jpeg" alt="Regart Logo" class="logo-img">
+                </a>
+                <h1>RIG ART</h1>
+            </div>
+            
+            <button class="hamburger" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/home page/index.html">HOME</a></li>
+                    <li><a href="/about/about.html">ABOUT</a></li>
+                    <li><a href="/Reach Us/reach.html">OUR REACH</a></li>
+                    <li><a href="/services/ser1.html">SERVICES</a></li>
+                    <li><a href="/design/design.html">DESIGN</a></li>
+                    <!-- <li><a href="/portfolio/portfolio.html">PORTFOLIO</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+        <section class="design-hero">
+            <br>
+            <br>
+            <h1>DESIGN PROCESS</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </section>
+        <section class="desingn-content">
+            <p>At Regart, our creative process begins with a comprehensive understanding of the project's key parameters. We apply strategic thinking to develop contemporary and innovative designs tailored to each client's specific requirements. Our resourceful and talented team comprehends the essential elements of a successful project. From the project's inception, we collaborate with clients to gather appropriate consultant advice and work diligently to ensure each design is executed to the highest standard, even within challenging budgets and timelines.</p>
+        </section>
+        <section class="design-info">
+            <img src="/images/com3.jpg" alt="">  
+            <div class="design-text">
+                <h3>DESIGN & DESIGN CONCEPTUALIZATION</h3>
+                <ul>
+                    <li>Client Brief</li>
+                    <li>Look and Feel Style</li>
+                    <li>Spatial Planning</li>
+                </ul>
+                <br>
+                <h3>DESIGN CONSOLIDATION</h3>
+                <ul>
+                    <li>Schematic Design</li>
+                    <li>Detail Design Development</li>
+                    
+                </ul>
+                <br>
+                <h3>PROJECT SPECIFICATIONS</h3>
+                <ul>
+                    <li>Technical Services</li>
+                    <li>Material Finalization</li>
+                       
+                </ul>
+                
+            </div>
+
+        </section>
+
+        <section class="design-info">
+            <div class="design-text">
+                <h3>EXECUTION & CONTRACT MANAGEMENT</h3>
+                <ul>
+                    <li>BOQ’s and Tender documentation</li>
+                    <li>Comparative Analysis</li>
+                    <li>Contractor / Vendor appointments</li>
+                </ul>
+                <h3>PROJECT DOCUMENTATION AND SUPERVISION</h3>
+                <ul>
+                    <li>Quality Control through GFC packages</li>
+                    <li>Design Consistency through site reviews</li>
+                    <li>Coordination and Project Management</li>
+                    
+                </ul>
+                <h3>COMPLETION AND HANDOVER</h3>
+                <ul>
+                    
+                    <li>Finishing stage and Set up</li>
+                    <li>Handover Documents</li>
+                    
+                </ul>
+            </div>
+            <img src="/images/com3.jpg" alt="">
+
+        </section>
+
+        <section class="design-info">
+            <img src="/images/com3.jpg" alt="">
+            <div class="design-text">
+                <h3>DECOR & STYLING FURNITURE SOLUTIONS</h3>
+                <ul>
+                    <li>Indoor and Outdoor</li>
+                    <li>Customization</li>
+                    <li>Sourcing</li>
+                </ul>
+                <h3>DÉCOR SELECTION</h3>
+                <ul>
+                    <li>Soft Furnishings</li>
+                    <li>Decorative lighting</li>
+                    <li>Accessories</li>
+                    
+                </ul>
+                <h3>ART CONSULTANCY</h3>
+                <ul>
+                    <li>Ideation</li>
+                    <li>Selection / Collaboration</li>
+                    <li>Installation</li>
+                    
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="desingn-content2">
+            <h5>We offer customized design services meticulously crafted to meet each client's unique needs, ensuring every detail is thoughtfully considered. Our commitment to transparent processes and clear communication fosters trust and clarity throughout the project. We approach each client relationship with gratitude and a sincere, personalized touch, partnering closely with you from inception to completion to bring your vision to life.</h5>
+        </section>
+
+    
+        
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Regart. All Rights Reserved.</p>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://in.pinterest.com/ideas">Pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('visible');
+        // Animate hamburger icon
+        menuToggle.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('visible');
+            menuToggle.classList.remove('active');
+        }
+    });
+</script>

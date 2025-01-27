@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c9c6c4;
+    color: #333;
+    padding-top: 80px;   /* Add padding to prevent content from jumping */
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.study {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #676a67;
+}
+
+header {
+    background-color: #2d2e2e;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header h1 {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #bea97c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-left: 5%;
+    height: 7%;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 34px;  /* Fixed missing semi-colon */
+}
+
+/* Mobile Menu Styles */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #e8c579;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70%;
+        right: -100%;
+        width: 30%;
+        height: 70vh;
+        background-color: #2d2e2e;
+        padding-top: 60px;
+        transition: 0.3s ease;
+        border-radius: 15px;
+        z-index: 1000;
+    }
+
+    .nav-menu.visible {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 16px 0;
+    }
+
+    .service-card {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .portfolio-gallery img {
+        width: 90%;
+    }
+
+    .logo-img {
+        height: 50px;
+        align-self: right;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-img {
+        height: 35px;
+    }
+}
+
+.menu-toggle {
+    z-index: 1001;
+}
+
+.about-hero {
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    background-image: url("/home page/home-images/home4.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.about-hero h1 {
+    font-size: 3rem;
+    color: #131411;
+    margin-bottom: 1rem;
+    background: linear-gradient(rgba(250, 235, 235, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: 200px;
+    
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-text, .about-text1 {
+    flex: 1 1 40%;  /* Makes the layout responsive */
+    padding: 20px;
+}
+
+.about-text {
+    padding-left: 40px;  /* Padding for better spacing */
+}
+
+.about-text1 {
+    width: 100%;  /* Full width for mobile view */
+}
+
+.about-text h2, .about-text1 h2 {
+    color: #a19c09;
+    font-size: 25px;
+}
+
+.about-text p {
+    color: #15170d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 350/380;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-content img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    .about-text{
+        font-size: 14px;
+    }
+    .about-text h2 {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .about-text1{
+        font-size: 14px;
+    }
+    .about-text1 h2{
+        font-size: 17px;
+    }
+    .about-content1{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    .about-content {
+        width: 100%;
+        padding: 15px;
+        flex-direction: column;
+    }
+    
+    .about-page {
+        width: 100%;
+    }
+    
+    .about-content img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+    .about-text{
+        font-size: 14px;
+        padding: 0;
+    }
+    .about-text p{
+        padding: 0px;
+    }
+    .about-text h2 {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .about-text1{
+        font-size: 14px;
+    }
+    .about-text1 h2{
+        font-size: 17px;
+    }
+    .about-content1{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .about-hero {
+        width: 100%;
+        padding: 20px 0;
+        min-height: 200px;
+    }
+    
+    .about-content {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    
+    .about-page {
+        width: 100%;
+    }
+    
+    .about-content img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto 15px;
+    }
+    .about-text{
+        font-size: 14px;
+        padding: 0;
+    }
+    .about-text p{
+        padding: 0px;
+    }
+    .about-text h2 {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .about-text1{
+        font-size: 14px;
+    }
+    .about-text1 h2{
+        font-size: 17px;
+    }
+    .about-content1{
+        display: flex;
+        flex-direction:row;
+    }
+}
+
+footer {
+    background-color:#2d2e2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
